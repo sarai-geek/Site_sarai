@@ -1,9 +1,12 @@
 from flask import Flask
-
+from admin_model import admin
 
 app = Flask(__name__)
 
 
 @app.route('/')
 def index():
-    return "my site-first page"
+    return "My Site-First Page"
+
+app.register_blueprint(admin)
+
