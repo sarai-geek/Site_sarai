@@ -9,8 +9,4 @@ def index():
 
 @admin.route('/login')
 def login():
-    session['name'] = 'ahmad'
-    #session.clear()
-    #print(session.get('name'))
-    print(session)
     return '1'
